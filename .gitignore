@@ -1,0 +1,6 @@
+# Existing .gitignore content
+node_modules
+.DS_Store
+
+# Ignore package-lock.json
+package-lock.json
