@@ -11,6 +11,11 @@ import { FilterProductsPipe } from './pipes/filter-products.pipe';
 import { ModalComponent } from './components/modal/modal.component';
 import { CreateProductComponent } from './components/create-product/create-product.component';
 import { FocusDirective } from './directives/focus.directive';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,11 @@ import { FocusDirective } from './directives/focus.directive';
     ModalComponent,
     CreateProductComponent,
     FocusDirective,
+    ProductPageComponent,
+    AboutPageComponent,
+    NavigationComponent,
+    CarouselComponent,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,19 @@
-<div class="py-4 px-6 border rounded flex items-center flex-col mb-2">
+<div
+  class="py-4 px-6 border rounded flex items-center flex-col justify-between h-80 relative"
+>
+  <div class="absolute top-2 flex justify-between w-full px-2">
+    <div class="border-2 border-black px-1 py-0.5 rounded-full">
+      <span>4.5</span>
+    </div>
+    <div class="border-2 border-black px-1 py-0.5 rounded-full">
+      <span>Вьетнам</span>
+    </div>
+  </div>
   <img [src]="product.image" [alt]="product.title" class="w-1/6 mb-2" />
   <h2 class="mb-2 text-md text-center">{{ product.title }}</h2>
   <p>
     Price:
-    <span class="font-bold">{{ product.price | currency : "KZT" }}</span>
+    <span class="font-bold">{{ product.price | currency }}</span>
   </p>
 
   <button

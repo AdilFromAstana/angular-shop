@@ -1,0 +1,12 @@
+<div class="flex flex-col gap-2">
+  <div class="flex justify-between">
+    <div class="font-medium text-xl">Туры во Вьетнам</div>
+    <div>Смотреть все</div>
+  </div>
+  <div *ngIf="products$ | async as products" class="grid grid-cols-3 gap-2">
+    <app-product
+      *ngFor="let product of products | filterProducts : term; let i = index"
+      [product]="product"
+    ></app-product>
+  </div>
+</div>
